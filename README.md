@@ -17,7 +17,7 @@ By attaching a dual-head regressor and segmentation path outfitted with **Convol
 
 ```mermaid
 flowchart LR
-    A[5-Channel Drone Image\n(RGB + NIR + RE)] --> B(Swin-V2 Tiny Backbone)
+    A["5-Channel Drone Image (RGB + NIR + RE)"] --> B(Swin-V2 Tiny Backbone)
     B -->|Hidden Tensors| C{Feature Split}
     
     C --> D[Yield Regressor]
